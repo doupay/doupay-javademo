@@ -223,13 +223,14 @@ public class TestController {
     @ApiOperation(value = "获取币种价格", notes = "获取币种价格")
     public DouPayResp<CoinPriceResponse> getCoinPrice(@RequestBody @Valid CoinPriceReq coinPriceReq) {
         InitTools.init();
-        BaseVo<CoinPriceResponse> baseVo = PaymentInfo.getCoinPrice(coinPriceReq.getAmount(), coinPriceReq.getMoney(),
-                coinPriceReq.getOrderType(), coinPriceReq.getCoinName(), coinPriceReq.getCurrency());
+        BaseVo<CoinPriceResponse> baseVo = PaymentInfo.getCoinPrice(coinPriceReq.getCoinName(), coinPriceReq.getCurrency());
         if (baseVo.getCode() == 200) {
             return DouPayResp.ok(baseVo.getData());
         } else {
             return new DouPayResp<>(baseVo.getCode(), baseVo.getMsg());
         }
+
+
     }
 
 
