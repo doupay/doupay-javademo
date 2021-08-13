@@ -24,4 +24,6 @@ public class WithdrawalReq {
     private CurrencyCodeEnum currency;
     @ApiModelProperty(value = "金额(法币购买时需要)")
     private String money;
+    @ApiModelProperty(value = "协议名称")
+    private String protocolName;
 }

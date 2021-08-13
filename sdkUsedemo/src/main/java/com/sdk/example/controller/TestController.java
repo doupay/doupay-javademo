@@ -171,11 +171,23 @@ public class TestController {
         }
     }
 
+    @RequestMapping(value = "/getCoinChainCodes", method = RequestMethod.POST)
+    @ApiOperation(value = "查询币种链信息", notes = "查询币种链信息")
+    public DouPayResp<CoinChainCodeResp> getCoinChainCodes(@RequestBody CoinChainCodeReq chainCodeReq) {
+        InitTools.init();
+        BaseVo<CoinChainCodeResp> baseVo = PaymentInfo.getCoinChainCodes(chainCodeReq.getCoinName());
+        if (baseVo.getCode() == 200) {
+            return DouPayResp.ok(baseVo.getData());
+        } else {
+            return new DouPayResp<>(baseVo.getCode(), baseVo.getMsg());
+        }
+    }
+
     @RequestMapping(value = "/withdrawal", method = RequestMethod.POST)
     @ApiOperation(value = "提现", notes = "提现")
     public DouPayResp<WithdrawResponse> withdrawal(@RequestBody WithdrawalReq withdrawalReq) {
         InitTools.init();
-        BaseVo<WithdrawResponse> baseVo = PaymentInfo.withdraw(withdrawalReq.getAddress(), withdrawalReq.getAmount(), withdrawalReq.getCoinName(), withdrawalReq.getMerchantUser(), withdrawalReq.getOrderNo(),withdrawalReq.getMoney(),withdrawalReq.getOrderType(),withdrawalReq.getCurrency());
+        BaseVo<WithdrawResponse> baseVo = PaymentInfo.withdraw(withdrawalReq.getProtocolName(),withdrawalReq.getAddress(), withdrawalReq.getAmount(), withdrawalReq.getCoinName(), withdrawalReq.getMerchantUser(), withdrawalReq.getOrderNo(),withdrawalReq.getMoney(),withdrawalReq.getOrderType(),withdrawalReq.getCurrency());
         if (baseVo.getCode() == 200) {
             return DouPayResp.ok(baseVo.getData());
         } else {

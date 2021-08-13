@@ -39,6 +39,7 @@ public class InitTools {
         Constants.openSysLog = true;
         Constants.getInstance().init(secret,privateKey,publicKey,appId,"3600");
         Constants.setLanguage(Language.zh_CH);
+        Constants.setBasrUrl("http://192.168.11.113:9000/");
     }
 
 }
