@@ -26,4 +26,6 @@ public class WithdrawalReq {
     private String money;
     @ApiModelProperty(value = "协议名称")
     private String protocolName;
+    @ApiModelProperty(value = "手续费")
+    private String feeAmount;
 }

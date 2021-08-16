@@ -187,7 +187,7 @@ public class TestController {
     @ApiOperation(value = "提现", notes = "提现")
     public DouPayResp<WithdrawResponse> withdrawal(@RequestBody WithdrawalReq withdrawalReq) {
         InitTools.init();
-        BaseVo<WithdrawResponse> baseVo = PaymentInfo.withdraw(withdrawalReq.getProtocolName(),withdrawalReq.getAddress(), withdrawalReq.getAmount(), withdrawalReq.getCoinName(), withdrawalReq.getMerchantUser(), withdrawalReq.getOrderNo(),withdrawalReq.getMoney(),withdrawalReq.getOrderType(),withdrawalReq.getCurrency());
+        BaseVo<WithdrawResponse> baseVo = PaymentInfo.withdraw(withdrawalReq.getProtocolName(),withdrawalReq.getAddress(), withdrawalReq.getAmount(), withdrawalReq.getCoinName(), withdrawalReq.getMerchantUser(), withdrawalReq.getOrderNo(),withdrawalReq.getMoney(),withdrawalReq.getOrderType(),withdrawalReq.getCurrency(),withdrawalReq.getFeeAmount());
         if (baseVo.getCode() == 200) {
             return DouPayResp.ok(baseVo.getData());
         } else {
