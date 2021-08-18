@@ -24,7 +24,7 @@ import java.util.Map;
 @RestController
 @Api(value = "用户模块", tags = "用户模块")
 @RequestMapping("/user")
-public class TestController {
+public class PaymentController {
 
     @ApiOperation(value = "回调", notes = "回调")
     @RequestMapping(value = "/payCallBack", method = RequestMethod.POST)
