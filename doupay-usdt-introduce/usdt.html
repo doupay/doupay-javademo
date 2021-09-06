@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>简介</title>
+</head>
+<script type="text/javascript">
+    var deviceWidth
+    setHtmlFontSize()
+    if (window.addEventListener) {
+    window.addEventListener('resize', function () {
+        setHtmlFontSize()
+    }, false)
+    }
+    function setHtmlFontSize () {
+    // 1366是设计稿的宽度，当大于1366时采用1366宽度，比例也是除以13.66
+        deviceWidth = document.documentElement.clientWidth > 1366 ? 1366 : document.documentElement.clientWidth
+        document.getElementsByTagName('html')[0].style.cssText = 'font-size:' + deviceWidth / 13.66 + 'px !important'
+    }
+</script>
+<body>
+    <div class="logo">
+        <img src= './images/bg.png'/>
+    </div>
+    <p class="text-content">
+        什么是数字货币？
+    </p>
+    <div class="main-top">
+        <img src="./images/currency.png" class="main-top-img"/>
+        <p class="word">数字货币是一种不具备实体形式的、仅以数字形式存在的货币。其性质与实体货币相似，允许在互联网上即时、无地理限制转让，主流的数字货币如USDT（泰达币）、BTC（比特币）、ETH（以太坊）等。
+        用户可以通过数字货币交易平台购买数字货币，建议存入私人数字货币钱包，每一个钱包对应一个地址，地址就相当于“银行账户”，可用于进行转账或收款。
+        通过在平台进行数字货币支付，兑换成人民币从而进行游戏。
+        </p>
+    </div>
+    <div class="main-middle" style="display: flex; margin: 0 auto;">
+        <div class="div1">
+            <p class="pword">高度加密</p>
+            <p class="pwordIntro">与银行卡等传统交易方式相比，用户不需要给出自己的姓名或卡号即可完成数字货币交易，避免敏感信息泄露。</p>
+        </div>
+        <div class="div2">
+            <p class="pword">交易快递</p>
+            <p class="pwordIntro">数字货币所采用的区块链技术具有去中心化特点，不需要清算中心机构来处理数据，交易时间大大缩短。</p>
+        </div>
+        <div class="div3">
+            <p class="pword">去中心化</p>
+            <p class="pwordIntro">数字货币所采用的区块链技术具有去中心化特点，不需要清算中心机构来处理数据，交易时间大大缩短。</p>
+        </div>
+    </div>
+    <div class="main-middle-bottom">
+        <p class="main-middle-bottom-p1">为何广泛使用USDT充提款？</p>
+        <p class="main-middle-bottom-p2">泰达币（Tether）也被称为USDT，其价值等同于美元。1 USDT=1美元，该特点使USDT成为全球加密数字货币中规模最大
+            流通性最高的稳定币，具有良好的保值性，也是网站所使用的主要币种。</p>
+         <div style="display: flex;width: 11.62rem;margin: 0 auto;">
+            <div class="main-middle-bottom-div1">
+                <p class="p1">规避风险</p>
+                <p class="p1-intro">USDT 在涨跌幅上不会出现巨大的波动，只跟随美元汇率的变化而变化，价格非常稳定。</p>
+            </div>
+            <div class="main-middle-bottom-div2">
+                <p class="p2">币价直观</p>
+                <p class="p1-intro">大部份币种不能直观看到相应的价值，需要计算转换，非常不便。USDT 可以直观的看到价值多少美元。</p>
+            </div>
+            <div class="main-middle-bottom-div3">
+                <p class="p3">流通快速</p>
+                <p class="p1-intro">大部份币种不能直观看到相应的价值，需要计算转换，非常不便。USDT 可以直观的看到价值多少美元。</p>
+            </div>
+         </div>
+         <div class="table-bottom" style="background: #fff; margin-top: 15px;width: 11.62rem;margin: 0 auto;margin-top: 15px;">
+            <p class="table-bottom-p">正确使用USDT钱包存取款的建议</p>
+            <p class="table-bottom-step">1．建议使用个人数字货币钱包，隐私安全性更强，如imToken钱包，TokenPocket钱包，非交易所钱包。</p>
+            <p class="table-bottom-step">2．建议一次在交易所多买些数字货币并在放置几小时后提至个人数字货币钱包存放，以便后续可直存入平台账户。</p>
+            <p class="table-bottom-step">3．若非着急使用人民币，可将提款的数字货币存放于个人数字货币钱包，视情况再售出，免去重复买入再提币的操作。</p>
+            <p class="table-bottom-step">4．建议在交易所进行币币交易（用USDT换成其它种类虚拟币比如BTC，也可再换回来），少量兑换待价格适宜再售出，数字货币投资行为有利于交易所账号的长期使用。</p>
+            <p class="table-bottom-step" style="padding-bottom: 15px;">5．非币圈用户，不建议使用火币交易所进行买币提币操作，避免审核。 </p>
+        </div>
+    </div>
+    <div class="middle-end">
+        <p class="p-diff">三种 USDT 协议使用区别</p>
+        <!-- table -->
+        <div>
+            <div class="table">
+                <div class="table-tr">
+                    <div class="table-th table-th-title">三种 USDT</div>
+                    <div class="table-th table-th-ERC">ERC20 协议</div>
+                    <div class="table-th table-th-TRC">TRC20 协议</div>
+                    <div class="table-th table-th-Omni">Omni 协议</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">地址样式（谨防充错）</div>
+                    <div class="table-td table-th-col2">数字 0 和 小写 x 开头<br/>例：0xbd7e4...</div>
+                    <div class="table-td table-th-col3">大写字母 T 开头，<br/>例： T9zp14nm…</div>
+                    <div class="table-td table-th-col4">数字 1 或者 3 开头,<br/>例：183hmJGRu...</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">使用情况</div>
+                    <div class="table-td table-th-col2">以太坊网络</div>
+                    <div class="table-td table-th-col3">波场网络</div>
+                    <div class="table-td table-th-col4">比特币网络</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">网络拥堵情况</div>
+                    <div class="table-td table-th-col2">比较拥堵</div>
+                    <div class="table-td table-th-col3">不拥堵</div>
+                    <div class="table-td table-th-col4">偶尔拥堵</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">日常转账速度</div>
+                    <div class="table-td table-th-col2">中</div>
+                    <div class="table-td table-th-col3">低</div>
+                    <div class="table-td table-th-col4">慢</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">手续费</div>
+                    <div class="table-td table-th-col2">高</div>
+                    <div class="table-td table-th-col3">低</div>
+                    <div class="table-td table-th-col4">高</div>
+                </div>
+                <div class="table-tr">
+                    <div class="table-td table-th-title">使用建议</div>
+                    <div class="table-td table-th-col2">不建议</div>
+                    <div class="table-td table-th-col3">强烈建议</div>
+                    <div class="table-td table-th-col4">不建议</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-bottom">
+        <p class="table-bottom-p">是不是不确定到底选哪种 USDT 协议？让我来帮您总结一下！</p>
+        <p class="table-bottom-step">1.强烈建议使用 TRC20 协议，转账手续费低且速度快哟。</p>
+        <p class="table-bottom-step">2.使用ERC20 协议转账速度一般，但是手续费较高且有时候链上拥堵，非必要使用情况下也是不建议使用的哦。</p>
+        <p class="table-bottom-step">3.Omni 协议的 USDT 手续费高且交易时间较长，因此不建议使用。</p>
+        <p class="table-bottom-step" style="padding-bottom: 0.37rem;">注意：三种 USDT 协议钱包地址不互通，充值、转账等操作请务必选择正确的地址，保证顺利完成交易哦！ </p>
+    </div>
+    <div class="end">
+        <p class="title1">哪里可以购买USDT泰达币?</p>
+        <p class="title2">第三平台方钱包使用指南</p>
+<div class="title3">
+    <div class="di1 bg1" style="margin-right: 0.45rem;">
+        <a href="https://www.coincola.info/ " style="text-decoration:none;">
+            <p style="font-size: 0.16rem;" >CoinCola</span>
+            <p style="font-size: 0.16rem">查看购买教程  ></p>
+        </a>
+    </div>
+    <div class="di1 bg2" style="margin-right: 0.45rem;">
+        <a href="https://www.binance.com/zh-CN" style="text-decoration:none;" >
+            <p style="font-size: 0.16rem;">币安</span>
+            <p style="font-size: 0.16rem;">查看购买教程  ></p>
+        </a>
+    </div>
+    <div class="di1 bg3" style="margin-right: 0.45rem;">
+        <a href="https://www.ouyi.run/" style="text-decoration:none;">
+            <p style="font-size: 0.16rem;">OKEX</span>
+            <p style="font-size: 0.16rem;">查看购买教程  ></p>
+        </a>
+    </div>
+    <div class="di1 bg4">
+        <a href="https://token.im/" style="text-decoration:none;" >
+            <p style="font-size: 0.16rem">im Token</span>
+            <p style="font-size: 0.16rem;">私有化钱包下载  ></p>
+        </a>
+    </div>
+    <!-- <div class="s1">
+        <a class="a">
+            <span class="title">火币</span>
+            <span class="avt">
+                <img class="lazy" src="./images/icon1.png" alt="火币" style="display: inline;">
+            </span>
+            <span class="intro">查看购买教程  ></span>
+        </a>
+    </div> -->
+    <!-- <div class="s1">
+        <a class="a">
+            <span class="title">火币</span>
+            <span class="avt">
+                <img class="lazy" src="./images/icon4.png" alt="火币" style="display: inline;">
+            </span>
+            <span class="intro">查看购买教程  ></span>
+        </a>
+    </div> -->
+    <!-- <div class="s1">
+        <a class="a">
+            <span class="title">火币</span>
+            <span class="avt">
+                <img class="lazy" src="./images/icon2.png" alt="火币" style="display: inline;">
+            </span>
+            <span class="intro">查看购买教程  ></span>
+        </a>
+    </div> -->
+    <!-- <div class="s1">
+        <a class="a">
+            <span class="title">火币</span>
+            <span class="avt">
+                <img class="lazy" src="./images/icon3.png" alt="火币" style="display: inline;">
+            </span>
+            <span class="intro">查看购买教程  ></span>
+        </a>
+    </div> -->
+</div>
+<div class="title4">
+    <div class="di11 bg1" >
+        <!-- <img src="images/icon1.png"> -->
+        
+        <a href="https://www.coincola.info/ " style="text-decoration:none;">
+        <p style="font-size: 0.16rem;">CoinCola</span>
+        <p style="font-size: 0.16rem">查看购买教程  ></p>
+        </a>
+    </div>
+    <div class="di11 bg2">
+        <a href="https://www.binance.com/zh-CN" style="text-decoration:none;" >
+        <!-- <img src="images/icon1.png"> -->
+        <p style="font-size: 0.16rem;">币安</span>
+        <p style="font-size: 0.16rem;">查看购买教程  ></p>
+        </a>
+    </div>
+</div>
+<div class="title5">
+    <div class="di11 bg3">
+        <!-- <img src="images/icon1.png"> -->
+        <a href="https://www.ouyi.run/" style="text-decoration:none;">
+        <p style="font-size: 0.16rem;">OKEX</span>
+        <p style="font-size: 0.16rem;">查看购买教程  ></p>
+        </a>
+    </div>
+    <div class="di11 bg4">
+        <a href="https://token.im/" style="text-decoration:none;" >
+        <!-- <img src="images/icon1.png"> -->
+		<p style="font-size: 0.16rem">im Token</span>
+        <p style="font-size: 0.16rem;">私有化钱包下载></p>
+        </a>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="question">
+        <img claxx="qicon" src="./images/question.png"/>
+        <span>常见问题</span>
+    </div>
+    <div class="last">
+        <div class="q1">
+            <span class="q">Q</span>
+            <span class="q-title">使用USDT存提款有哪些注意事项？</span>
+            <p class="q-p">
+                <!-- <span class="a">A</span> -->
+                <img style="height: 26px;width: 26px;" src="./images/a.png"/>
+                <span style="color: #fff;position: relative;left: -20px;top: 2px;">A</span>
+                <span class="a-intro">使用火币、币安等交易所地址频繁转账收款，非币圈用户可能面临交易所风控。建议在交易所一次买入USDT后转入如Imtoken、Tokenpocket等去中心化私有钱包里，再进行存提款操作。
+                </span> 
+            </p>
+        </div>
+        <div class="q2">
+            <span class="q">Q</span>
+            <span class="q-title">转账后订单迟迟未显示成功该怎么办呢?</span>
+            <p class="q-p">
+                <img style="height: 26px;width: 26px;" src="./images/a.png"/>
+                <span style="color: #fff;position: relative;left: -20px;top: 2px;">A</span>
+                <span class="a-intro">加密货币转账需要区块全部确认，才会判定转账成功。您可以先查看钱包的转账详情页面是否已显示转账完成。若未完成，请耐心等待。若已完成，系统在检测到款后会及时响应并更改订单状态。若已完成，网站还未到账金额，请联系在线客服提供相应转账凭证寻求协助
+                </span> 
+            </p>
+        </div>
+        <div class="q3">
+            <span class="q">Q</span>
+            <span class="q-title">支付成功了，订单显示失败怎么处理?</span>
+            <p class="q-p">
+                <!-- <span class="a">A</span> -->
+                <img style="height: 26px;width: 26px;" src="./images/a.png"/>
+                <span style="color: #fff;position: relative;left: -20px;top: 2px;">A</span>
+                <span class="intro-a">产生这种情况的原因是：1、支付金额不对 2、订单超时 3、币价突然波动过大，系统停止处理。
+                </span> 
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    *,body,html{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size: 100px;
+        font-family: 'MicrosoftYaHei-Bold';
+    }
+    body{
+      background-color: #F4F5FA;
+    }
+    .text-content {
+        text-align: center;
+        font-size: 0.36rem;
+        letter-spacing: 1px;
+        color: #0b52d5;
+    }
+    .logo img {
+        max-width: 100%;
+        min-height: 100%;
+    }
+    .word {
+        font-size: 0.14rem;
+        line-height: 0.32rem;
+        padding: 0.3rem;
+        max-width: 6.45rem;
+    }
+    .main-top {
+        width: 11.62rem;
+        background-color: #ffffff;
+	    box-shadow: 0px 0px 20px 0px 
+		rgba(89, 168, 248, 0.17);
+	    border-radius: 12px;
+        margin: 0 auto;
+        margin-top: 0.3rem;
+        display: flex;
+        padding: 0.1rem;
+    }
+    .main-middle {
+        width: 11.62rem;
+        margin: 0 auto;
+        padding-top: 0.51rem;
+        /* padding: 0.1rem; */
+        border-radius: 12px;
+        padding-bottom: 0.87rem;
+       
+        /* box-shadow: 0px 0px 20px 0px  */
+        /* border: 1px solid red; */
+    }
+    .main-middle .pword{
+        font-size: 0.24rem;
+        text-align: center;
+    }
+    .main-middle .pwordIntro {
+        font-size: 14px;
+        text-align: left;
+        margin-top: 0.36rem;
+    }
+    .main-top img {
+        height: 100%;
+        width:100%;
+    }
+    .div1{
+        background: url('./images/01.png')  no-repeat;
+        background-position: center 0.2rem;
+    }
+    .div2{
+        background: url('./images/02.png')  no-repeat;
+        background-position: center 0.2rem;
+    }
+    .div3{
+        background: url('./images/03.png')  no-repeat;
+        background-position: center 0.2rem;
+    }
+    .div1,.div2,.div3 {
+        width: 3.59rem;
+        /* height: 1.88rem; */
+        background-color: #ffffff;
+        box-shadow: 0px 0px 20px 0px 
+            rgba(89, 168, 248, 0.17);
+        border-radius: 12px;
+        /* display: inline-block; */
+        padding: 0.38rem;
+        
+    }
+    .div1, .div2{
+        margin-right: 0.43rem;
+    }
+    .main-middle-bottom {
+        /* height: 3rem; */
+        background-color:#dbe5f8;
+        padding-bottom: 0.8rem;
+    }
+    .main-middle-bottom-p1 {
+        font-size: 0.36rem;
+        font-family: 'MicrosoftYaHei-Bold';
+        /* line-height: 15px; */
+        letter-spacing: 1px;
+        color: #0b52d5;
+        text-align: center;
+        padding-top: 0.34rem;
+    }
+    .main-middle-bottom-p2{
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 0.2rem;
+        margin: 0 auto;
+        max-width: 8.29rem;
+    }
+    .main-middle-bottom-div1,.main-middle-bottom-div2,.main-middle-bottom-div3{
+        /* display: flex;
+        align-items: center; */
+        width: 3.6rem;
+        /* border: 1px solid red; */
+        padding: 0.3rem;
+       
+        background-color: #ffffff;
+	    box-shadow: 0px 0px 20px 0px 
+		rgba(89, 168, 248, 0.17);
+	    border-radius: 12px;
+        margin-top: 0.2rem;
+    }
+    .main-middle-bottom-div1,.main-middle-bottom-div2 {
+        margin-right: 0.43rem;
+
+    }
+    .p1,.p2,.p3{
+        font-family: MicrosoftYaHei;
+        font-size: 0.24rem;
+        /* line-height: 16px; */
+        letter-spacing: 0px;
+        color: #0b52d5;
+        text-align: center;
+    }
+    .p1-intro {
+        font-family: 'MicrosoftYaHei';
+        font-size: 0.14rem;
+        line-height: 16px;
+        color: #333333;
+        padding-top: 0.2rem;
+    }
+    .end{
+        background-color:#dbe5f8;
+        padding-bottom: 0.97rem;
+        margin-top: 0.69rem;
+    }
+    .end .title1{
+     font-family: 'MicrosoftYaHei-Bold';
+	 font-size: 0.36rem;
+	 font-weight: normal;
+	 font-stretch: normal;
+	 line-height: 0.15rem;
+	 letter-spacing: 1px;
+	 color: #0b52d5;
+     text-align: center;
+     padding-top: 0.64rem;
+    }
+    .end .title2 {
+	font-family: 'MicrosoftYaHei';
+	font-size: 0.21rem;
+	line-height: 1rem;
+	letter-spacing: 0px;
+	color: #0b52d5;
+    text-align: center;
+    padding-top: 0.3rem;
+    }
+    .title3 {
+        display: flex;
+        width: 11.39rem;
+        margin: 0 auto;
+    }
+    .title4,.title5 {
+        display: none;
+        width: 12rem;
+        margin: 0 auto;
+    }
+    .s1{
+        background-color: #ffffff;
+	    box-shadow: 0px 0px 20px 0px rgba(89, 168, 248, 0.17);
+        border-radius: 12px;
+        margin-right: 0.43rem;
+        margin-top: 0.65rem;
+    }
+
+    .s1 .a {
+        height: 1.04rem;
+        position: relative;
+        width: 2.59rem;
+        display: block;
+
+    }
+    .s1 .title{
+        position: absolute;
+        left: 80px;
+        bottom: 44px;
+        font-size: 16px;
+        display: block;
+        line-height: 1.5;
+        color: #111;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        z-index: 2;
+        font-size: 16px;
+    }
+    .s1 .avt img{
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        overflow: hidden;
+    }
+    .s1 .avt img{
+        /* height: 100%;
+        width: 100%; */
+        display: block;
+    }
+    .intro {
+        position: absolute;
+        left: 80px;
+        bottom: 15px; 
+        font-size: 14px;
+        line-height: 1.5;
+        color: #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        z-index: 2;
+    }
+    .question {
+        text-align: center;
+        /* position: relative; */
+        height: 67px;
+        line-height: 67px;
+        padding: 20px;
+    }
+    .question span {
+        font-family: 'MicrosoftYaHei-Bold';
+        display: inline-block;
+        vertical-align: top;
+        font-size: 0.36rem;
+        /* line-height: 67px;
+        height: 67px; */
+        letter-spacing: 1px;
+        color: #0b52d5;
+        /* position: absolute;
+        top: 0.55rem; */
+        padding-left: 20px;
+    }
+    .last {
+        width: 10.91rem;
+        background: #fff;
+        margin: 0 auto;
+        padding: 0.46rem;
+    }
+    .last{
+        font-size: 14px;
+    }
+    .q1, .q2{
+        padding-bottom: 20px;
+    }
+    .q1 .q, .q2 .q,.q3 .q{  
+        display: inline-block;
+        height: 26px;
+        width: 26px; 
+        border-radius: 100%;
+        background-color: #0b52d5;
+        color: #fff;
+        line-height: 26px;
+        text-align: center;
+    }
+    .q1 .q-title, .q2 .q-title,.q3 .q-title{  
+        font-weight: bold; 
+        padding-left: 0.12rem;
+    }
+    .q1 .a, .q2 .a,.q3 .a{  
+        display: inline-block;
+        height: 26px;
+        width: 26px; 
+        border-radius: 100%;
+        background-color:  #d3ebd7;
+        color: #fff;
+        line-height: 26px;
+        text-align: center;
+        margin-top: 0.25rem;
+    }
+    .q-p{
+        /* text-align: left; */
+        display: flex;
+        margin-top: 10px;
+    }
+    .a-intro,.intro-a {
+        padding-bottom: 0.25rem;
+    }
+    .a-intro{
+        border-bottom: 1px dotted black;
+        text-align: left;
+    }
+    .p-diff {
+        font-size: 0.36rem;
+        line-height: 0.15rem;
+        letter-spacing: 1px;
+        color: #0b52d5;
+        text-align: center;
+        margin-top: 0.62rem;
+        margin-bottom: 0.62rem;
+    }
+    .middle-end {
+        width: 12rem;
+        margin: 0 auto;
+    }
+    .table {
+        font-size: 0.16rem;
+        margin-top: 0.51rem;
+        width: 11.39rem;
+        margin: 0 auto;
+    }
+    .table
+     {
+        display: table; 
+        border-collapse: collapse;
+    }
+    .table-tr 
+     {
+        display: table-row; 
+        height: 30px;
+     }
+    .table-th 
+     {
+        display: table-cell;
+        font-weight: bold;
+        height: 100%;
+        /* border: 1px solid gray; */
+        text-align: center;
+        vertical-align: middle;
+    }
+    .table-td 
+    { 
+        display: table-cell; 
+        height: 100%;
+        width: 2.83rem;
+        /* border: 1px solid gray;  */
+        text-align: center;
+        vertical-align: middle;
+    }
+    .table-th-title {
+        background-color: #aec7f49e;
+        height: 0.52rem;
+        border-bottom: 1px solid #fff;
+        font-weight: bold;
+        color: #333333;
+        font-family: 'MicrosoftYaHei-Bold';
+    }
+    .table-th-ERC {
+        background-color: #ff9900;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .table-th-Omni {
+        background-color: #33ccff;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .table-th-TRC {
+        background-color: #66cc66;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+    }
+    .table-th-col2{
+        background-color: #ffe1b496;
+        border-left: 1px solid #fff;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+	    /* opacity: 0.68; */
+    }
+    .table-th-col3{
+        background-color:#66cc6647;
+        border-left: 1px solid #fff;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+    }
+    .table-th-col4{
+        background-color: #33ccff3d;
+        border-left: 1px solid #fff;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+    }
+    .table-bottom {
+        background-color: #dbe5f885;
+        /* width: 100%; */
+        /* padding: 42px 26px; */
+        padding-top: 42px;
+        line-height: 0.31rem;
+        width: 11.39rem;
+        margin: 0 auto;
+    }
+    .table-bottom .table-bottom-p {
+        font-size: 0.17rem;
+        letter-spacing: 0px;
+        color: #333333;
+        font-weight: bold;
+        line-height: 20px;
+        padding-left: 0.26rem;
+        margin-bottom: 10px;
+    }
+    .table-bottom-step {
+        font-size: 14px;
+        letter-spacing: 0px;
+        color: #333333;
+        line-height: 25px;
+        padding-left: 0.26rem;
+    }
+    .main-top-img {
+        width: 4.01rem;
+        height: 1.97rem;
+    }
+    #J_btn_list li{
+    display: block;
+    float: left;
+    overflow: hidden;
+    /* margin: 66px 0 0 3px; */
+    padding: 10px 20px 0 55px;
+    overflow: hidden;
+    height: 1.04rem;
+    width: 1.6rem;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px rgb(89 168 248 / 17%);
+    border-radius: 12px;
+    /* margin-right: 0.43rem; */
+    margin-top: 0.65rem;
+    }
+    .item1{
+        background: url('./images/icon1.png') no-repeat;
+    }
+    .item2{
+        background: url('./images/icon4.png') no-repeat;
+    }
+    .item3{
+        background: url('./images/icon2.png') no-repeat;
+    }
+    .item4{
+        background: url('./images/icon3.png') no-repeat;
+    }
+    .qicon{
+        width: 100px;
+        height: 67px;
+    }
+    .wallet {
+        width: 11.29rem;
+        margin: 0 auto;
+       
+    }
+    @media screen and (max-width:998px){
+      .main-middle-bottom-p2{
+          text-align: left;
+      }
+    }
+    @media screen and (max-width:780px){
+        .main-top{
+           display: block;
+        }
+        .main-top-img {
+          width: 4.01rem;
+          height: 1.97rem;
+        }
+        .word{
+            max-width: 95%;
+            line-height: 20px;
+        }
+    }
+    @media screen and (max-width:660px){
+        .title3{
+           display: none;
+        }
+        .title4,.title5{
+            display: flex;
+        }
+    }
+    .di1{
+        /* background: url('./images/icon1.png') no-repeat; */
+        width: 2rem;
+        height: 45px;
+        padding-left: 0.8rem;
+        /* border: 1px solid red; */
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        background-color: #ffffff;
+	    box-shadow: 0px 0px 20px 0px rgba(89, 168, 248, 0.17);
+        border-radius: 12px;
+        margin-right: 0.43rem;
+        margin-top: 0.65rem;
+        
+    }
+   .di11.bg1, .di1.bg1 {
+        background: #fff url('https://static-1251297012.file.myqcloud.com/static/images/favicon.ico') no-repeat;
+        background-position: 0.2rem;
+        background-size: 0.54rem 0.54rem;
+   }
+    .di11.bg2,.di1.bg2 {
+        background:#fff  url('./images/icon4.png') no-repeat;
+        background-position: 0.2rem;
+        background-size: 0.54rem 0.54rem;
+    }
+    .di11.bg3 ,.di1.bg3 {
+        background: #fff url('./images/icon2.png') no-repeat;
+        background-position: 0.2rem;
+        background-size: 0.54rem 0.54rem;
+    }
+    .di11.bg4, .di1.bg4 {
+     background: #fff url('./images/icon3.png') no-repeat; 
+     background-position: 0.2rem;
+        background-size: 0.54rem 0.54rem;
+    }
+    .di11{
+        flex: 1;
+        /* background: url('./images/icon1.png') no-repeat; */
+        width: 2rem;
+        height: 45px;
+        padding-left: 1rem;
+        /* border: 1px solid red; */
+        vertical-align: middle;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 20px;
+        /* background-position: 0.2rem;
+        background-size: 0.54rem 0.54rem; */
+        /* background-color: #ffffff; */
+	    box-shadow: 0px 0px 20px 0px rgba(89, 168, 248, 0.17);
+        border-radius: 12px;
+        margin-right: 0.43rem;
+        margin-top: 0.65rem;
+    }
+</style>
